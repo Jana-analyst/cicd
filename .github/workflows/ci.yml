@@ -50,7 +50,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
         mvn clean verify sonar:sonar \
-          -Dsonar.projectKey=jana-analyst \
+          -Dsonar.projectKey=jana-analyst_cicd \
           -Dsonar.organization=jana-analyst \
           -Dsonar.host.url=https://sonarcloud.io
 
